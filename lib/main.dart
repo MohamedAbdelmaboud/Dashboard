@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'features/home/ui/widgets/home_view_body.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -22,14 +24,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            'Title text',
-          ), // fixed scale factor
-        ],
-      ),
+      body: HomeViewBody(),
     );
   }
 }
