@@ -22,7 +22,7 @@ abstract class AppStyles {
   static TextStyle styleSemiBold16(BuildContext context) {
     return const TextStyle(
       color: Color(0xFF064061),
-      fontSize: 20,
+      fontSize: 16,
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w600,
     );
@@ -58,7 +58,7 @@ abstract class AppStyles {
   static TextStyle styleRegular12(BuildContext context) {
     return const TextStyle(
       color: Color(0xFFAAAAAA),
-      fontSize: 20,
+      fontSize: 12,
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w400,
     );
@@ -67,7 +67,7 @@ abstract class AppStyles {
   static TextStyle styleSemiBold24(BuildContext context) {
     return const TextStyle(
       color: Color(0xFF4EB7F2),
-      fontSize: 20,
+      fontSize: 24,
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w600,
     );
@@ -76,7 +76,7 @@ abstract class AppStyles {
   static TextStyle styleRegular14(BuildContext context) {
     return const TextStyle(
       color: Color(0xFFAAAAAA),
-      fontSize: 20,
+      fontSize: 14,
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w400,
     );
@@ -85,7 +85,7 @@ abstract class AppStyles {
   static TextStyle styleSemiBold18(BuildContext context) {
     return const TextStyle(
       color: Color(0xFFFFFFFF),
-      fontSize: 20,
+      fontSize: 18,
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w600,
     );

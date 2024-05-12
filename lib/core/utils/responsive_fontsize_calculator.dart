@@ -4,8 +4,8 @@ double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
   double scaleFactor = getScaleFactor(context);
   double responsivefontSize = scaleFactor * fontSize;
   //************/
-  double lowerLimit = responsivefontSize * 0.8; // less than 20 %
-  double upperLimit = responsivefontSize * 1.20; // larger than 20 %
+  double lowerLimit = responsivefontSize * 0.8; // It decreases by 20 %
+  double upperLimit = responsivefontSize * 1.20; // It increases by 20 %
   double finalFontSize = responsivefontSize.clamp(lowerLimit, upperLimit);
 
   print(
@@ -23,3 +23,6 @@ double getScaleFactor(BuildContext context) {
     return width / 1100; // scale factor for desktop --> 1100  reference width
   }
 }
+// scale factor
+// get responsive font 
+// min max

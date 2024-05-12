@@ -1,4 +1,7 @@
+import 'package:dashboard/features/home/ui/widgets/adaptive_layout.dart';
 import 'package:flutter/material.dart';
+
+import 'desktop_layout.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({
@@ -7,13 +10,10 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          'Title text',
-        ), // fixed scale factor
-      ],
+    return AdaptiveLayout(
+      desktopLayout: (context) => const DesktopLayout(),
+      tabletLayout: (context) => const SizedBox(),
+      mobileLayout: (context) => const SizedBox(),
     );
   }
 }
