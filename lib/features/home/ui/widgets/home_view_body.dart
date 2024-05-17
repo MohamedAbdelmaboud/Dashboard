@@ -1,7 +1,7 @@
 import 'package:dashboard/features/home/ui/widgets/adaptive_layout.dart';
 import 'package:flutter/material.dart';
 
-import 'desktop_layout.dart';
+import '../layouts/desktop_layout.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({
@@ -15,5 +15,6 @@ class HomeViewBody extends StatelessWidget {
       tabletLayout: (context) => const SizedBox(),
       mobileLayout: (context) => const SizedBox(),
     );
+    
   }
 }
