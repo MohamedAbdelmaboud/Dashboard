@@ -1,3 +1,4 @@
+import 'package:dashboard/core/utils/custom_scroll_behavior.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -17,8 +18,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomeView(),
+    return MaterialApp(
+      scrollBehavior: CustomScrollBehavior(),
+      home: const HomeView(),
     );
   }
 }

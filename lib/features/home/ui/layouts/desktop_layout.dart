@@ -1,3 +1,4 @@
+import 'package:dashboard/features/home/ui/widgets/quick_invoice.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -11,12 +12,20 @@ class DesktopLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Row(
       children: [
+        Gap(40),
         Expanded(
           child: CustomDrawer(),
         ),
         Gap(32),
         Expanded(
-          child: AllExpensesBody(),
+          flex: 2,
+          child: Column(
+            children: [
+              AllExpensesBody(),
+              Gap(24),
+              QuickInvoice(),
+            ],
+          ),
         ),
       ],
     );

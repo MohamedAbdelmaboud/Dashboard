@@ -1,7 +1,7 @@
+import 'package:dashboard/features/home/ui/widgets/custom_header_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import 'all_expenses_header.dart';
 import 'all_expenses_items.dart';
 import 'custom_background_container.dart';
 
@@ -11,12 +11,12 @@ class AllExpensesBody extends StatelessWidget {
   });
   @override
   Widget build(BuildContext context) {
-    return const CustomBackgroundContainer(
+    return CustomBackgroundContainer(
         child: Column(
       children: [
-        AllExpensesHeader(),
-        Gap(16),
-        AllExpensesItems(),
+        CustomHeaderBuilder.allExpensesHeader(),
+        const Gap(16),
+        const AllExpensesItems(),
       ],
     ));
   }

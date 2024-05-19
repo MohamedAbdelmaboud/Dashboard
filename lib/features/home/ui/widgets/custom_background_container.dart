@@ -11,8 +11,9 @@ class CustomBackgroundContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(padding),
+        borderRadius: BorderRadius.circular(12),
         color: Colors.white,
       ),
       child: child,
