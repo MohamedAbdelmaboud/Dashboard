@@ -7,6 +7,6 @@ class TransactionModel {
     required this.title,
     required this.subtitle,
     required this.amount,
-    required this.withdrawal,
+     this.withdrawal = false,
   });
 }

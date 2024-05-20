@@ -38,7 +38,7 @@ class _PageViewCardsState extends State<PageViewCards> {
   ];
   @override
   void initState() {
-    _pageController = PageController(initialPage: 0);
+    _pageController = PageController(initialPage: 0, viewportFraction: 1.1);
     super.initState();
   }
 
@@ -60,14 +60,17 @@ class _PageViewCardsState extends State<PageViewCards> {
           });
         },
         itemBuilder: (context, index) {
-          return MyCard(
-            cardModel: cardsModels[index],
+          return Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: MyCard(
+              cardModel: cardsModels[index],
+            ),
           );
         },
       ),
       const Gap(19),
       AllDots(
-      pageIndex: currentIndex,
+        pageIndex: currentIndex,
         pageController: _pageController,
       ),
     ]);
