@@ -1,12 +1,12 @@
 import 'package:dashboard/core/utils/app_images.dart';
-import 'package:dashboard/features/home/ui/widgets/drawer_item.dart';
-import 'package:dashboard/features/home/ui/widgets/user_info_tile.dart';
+import 'package:dashboard/features/home/ui/widgets/custom_drawer/drawer_item.dart';
+import 'package:dashboard/features/home/ui/widgets/transtion_history/user_info_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
-import '../../data/models/drawer_item_model.dart';
-import '../../data/models/user_info_model.dart';
+import '../../../data/models/drawer_item_model.dart';
+import '../../../data/models/user_info_model.dart';
 import 'list_drawer_items.dart';
 
 class CustomDrawer extends StatelessWidget {

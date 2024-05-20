@@ -2,7 +2,7 @@ import 'package:dashboard/core/themes/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../data/models/card_model.dart';
+import '../../../data/models/card_model.dart';
 
 class CardInfoTile extends StatelessWidget {
   const CardInfoTile({

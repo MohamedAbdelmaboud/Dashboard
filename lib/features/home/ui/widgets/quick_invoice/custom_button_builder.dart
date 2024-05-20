@@ -1,5 +1,5 @@
 import 'package:dashboard/core/themes/app_colors.dart';
-import 'package:dashboard/features/home/ui/widgets/custom_button.dart';
+import 'package:dashboard/features/home/ui/widgets/quick_invoice/custom_button.dart';
 import 'package:flutter/material.dart';
 
 class CustomButtonBuilder {

@@ -1,7 +1,7 @@
 import 'package:dashboard/core/utils/app_images.dart';
 import 'package:flutter/material.dart';
 
-import '../../data/models/all_expenses_item_model.dart';
+import '../../../data/models/all_expenses_item_model.dart';
 import 'all_expenses_item.dart';
 
 class AllExpensesItems extends StatefulWidget {

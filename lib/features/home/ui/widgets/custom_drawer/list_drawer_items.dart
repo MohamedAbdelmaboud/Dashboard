@@ -1,6 +1,6 @@
 import 'package:dashboard/core/utils/app_images.dart';
 import 'package:dashboard/features/home/data/models/drawer_item_model.dart';
-import 'package:dashboard/features/home/ui/widgets/drawer_item.dart';
+import 'package:dashboard/features/home/ui/widgets/custom_drawer/drawer_item.dart';
 import 'package:flutter/material.dart';
 
 class ListDrawerItems extends StatefulWidget {

@@ -1,7 +1,7 @@
 import 'package:dashboard/core/themes/app_styles.dart';
 import 'package:flutter/material.dart';
 
-import '../../data/models/transaction_model.dart';
+import '../../../data/models/transaction_model.dart';
 
 class TransactionCard extends StatelessWidget {
   const TransactionCard({

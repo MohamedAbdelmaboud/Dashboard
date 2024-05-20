@@ -1,5 +1,5 @@
-import 'package:dashboard/features/home/ui/widgets/all_expenses_body.dart';
-import 'package:dashboard/features/home/ui/widgets/quick_invoice.dart';
+import 'package:dashboard/features/home/ui/widgets/all_expenses/all_expenses_body.dart';
+import 'package:dashboard/features/home/ui/widgets/quick_invoice/quick_invoice.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 

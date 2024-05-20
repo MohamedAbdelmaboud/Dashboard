@@ -2,8 +2,8 @@ import 'dart:math';
 
 import 'package:dashboard/core/themes/app_colors.dart';
 import 'package:dashboard/core/themes/app_styles.dart';
-import 'package:dashboard/features/home/ui/widgets/custom_header.dart';
-import 'package:dashboard/features/home/ui/widgets/drop_down_range.dart';
+import 'package:dashboard/core/widgets/custom_header.dart';
+import 'package:dashboard/core/widgets/custom_range.dart';
 import 'package:flutter/material.dart';
 
 class CustomHeaderBuilder {
@@ -20,7 +20,7 @@ class CustomHeaderBuilder {
   static allExpensesHeader() {
     return const CustomHeader(
       title: 'All Expenses',
-      trailingWidget: RangeOfExpenses(
+      trailingWidget: CustomRange(
         angle: -pi / 2.0,
       ),
     );
@@ -29,7 +29,7 @@ class CustomHeaderBuilder {
   static incomeHeader() {
     return const CustomHeader(
       title: 'Income',
-      trailingWidget: RangeOfExpenses(
+      trailingWidget: CustomRange(
         angle: -pi / 2.0,
       ),
     );

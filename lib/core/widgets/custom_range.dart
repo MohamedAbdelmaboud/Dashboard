@@ -4,8 +4,8 @@ import 'package:gap/gap.dart';
 
 import 'ios_icon.dart';
 
-class RangeOfExpenses extends StatelessWidget {
-  const RangeOfExpenses({
+class CustomRange extends StatelessWidget {
+  const CustomRange({
     super.key,
     required this.angle,
   });

@@ -1,8 +1,8 @@
-import 'package:dashboard/features/home/ui/widgets/my_card_and_transaction_and_income_section.dart';
+import 'package:dashboard/features/home/ui/widgets/my_card/my_card_and_transaction_and_income_section.dart';
 import 'package:flutter/material.dart';
 
-import '../widgets/all_expenses_and_quick_invoice_section.dart';
-import '../widgets/custom_drawer.dart';
+import '../widgets/all_expenses/all_expenses_and_quick_invoice_section.dart';
+import '../widgets/custom_drawer/custom_drawer.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});

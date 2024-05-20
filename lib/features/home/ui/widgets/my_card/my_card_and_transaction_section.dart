@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'custom_background_container.dart';
+import '../../../../../core/widgets/custom_background_container.dart';
 import 'my_card_section.dart';
-import 'transaction_history_section.dart';
+import '../transtion_history/transaction_history_section.dart';
 
 class MyCardAndTransactionSection extends StatelessWidget {
   const MyCardAndTransactionSection({

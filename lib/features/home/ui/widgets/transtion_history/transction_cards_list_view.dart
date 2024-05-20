@@ -1,5 +1,5 @@
 import 'package:dashboard/features/home/data/models/transaction_model.dart';
-import 'package:dashboard/features/home/ui/widgets/transaction_card.dart';
+import 'package:dashboard/features/home/ui/widgets/transtion_history/transaction_card.dart';
 import 'package:flutter/material.dart';
 
 class TransctionCardsListView extends StatelessWidget {

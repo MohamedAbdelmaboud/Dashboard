@@ -1,6 +1,6 @@
 import 'package:dashboard/core/utils/app_images.dart';
 import 'package:dashboard/features/home/data/models/user_info_model.dart';
-import 'package:dashboard/features/home/ui/widgets/user_info_tile.dart';
+import 'package:dashboard/features/home/ui/widgets/transtion_history/user_info_tile.dart';
 import 'package:flutter/material.dart';
 
 class UsersInfoListView extends StatelessWidget {

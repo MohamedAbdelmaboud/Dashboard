@@ -1,5 +1,4 @@
-import 'package:dashboard/features/home/ui/widgets/custom_header_builder.dart';
-import 'package:dashboard/features/home/ui/widgets/my_card_and_transaction_section.dart';
+import 'package:dashboard/core/widgets/custom_header_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 

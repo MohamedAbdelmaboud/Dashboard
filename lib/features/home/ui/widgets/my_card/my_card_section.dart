@@ -2,7 +2,7 @@ import 'package:dashboard/core/themes/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import 'page_view_cards.dart';
+import '../page_view_cards.dart';
 
 class MyCardSection extends StatelessWidget {
   const MyCardSection({

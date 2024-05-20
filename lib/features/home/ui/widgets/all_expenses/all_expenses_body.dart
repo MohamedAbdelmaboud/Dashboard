@@ -1,9 +1,9 @@
-import 'package:dashboard/features/home/ui/widgets/custom_header_builder.dart';
+import 'package:dashboard/core/widgets/custom_header_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import 'all_expenses_items.dart';
-import 'custom_background_container.dart';
+import '../../../../../core/widgets/custom_background_container.dart';
 
 class AllExpenses extends StatelessWidget {
   const AllExpenses({

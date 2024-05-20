@@ -2,7 +2,7 @@ import 'package:dashboard/core/themes/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import 'users_info_list_view.dart';
+import '../quick_invoice/users_info_list_view.dart';
 
 class LatestTransactionSection extends StatelessWidget {
   const LatestTransactionSection({super.key});

@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:dashboard/core/themes/app_colors.dart';
-import 'package:dashboard/features/home/ui/widgets/ios_icon.dart';
+import 'package:dashboard/core/widgets/ios_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
