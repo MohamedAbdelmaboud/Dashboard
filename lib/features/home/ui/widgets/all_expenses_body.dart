@@ -5,8 +5,8 @@ import 'package:gap/gap.dart';
 import 'all_expenses_items.dart';
 import 'custom_background_container.dart';
 
-class AllExpensesBody extends StatelessWidget {
-  const AllExpensesBody({
+class AllExpenses extends StatelessWidget {
+  const AllExpenses({
     super.key,
   });
   @override

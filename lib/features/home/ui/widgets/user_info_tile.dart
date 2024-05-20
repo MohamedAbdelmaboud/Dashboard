@@ -15,7 +15,7 @@ class UserInfoTile extends StatelessWidget {
       elevation: 0,
       color: const Color(0xffFAFAFA),
       child: ListTile(
-        leading: SvgPicture.asset(userInfoModel.imagePath),
+        leading: SvgPicture.asset(userInfoModel.imagePath ,),
         title: Text(
           userInfoModel.title,
           style: AppStyles.styleSemiBold16(context),
