@@ -6,9 +6,10 @@ class AllDots extends StatefulWidget {
   const AllDots({
     super.key,
     required this.pageController,
+    required this.pageIndex,
   });
   final PageController pageController;
-
+  final int pageIndex;
   @override
   State<AllDots> createState() => _AllDotsState();
 }
@@ -25,7 +26,7 @@ class _AllDotsState extends State<AllDots> {
             animateToPage(index);
           },
           child: DotsIndicator(
-            isActive: currentIndex == index,
+            isActive: index == widget.pageIndex,
           ),
         ),
       ),

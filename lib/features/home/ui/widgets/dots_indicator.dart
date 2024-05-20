@@ -22,11 +22,9 @@ class _DotsIndicatorState extends State<DotsIndicator> {
       height: 8,
       width: widget.isActive ? 32 : 8,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(12),
-        color: widget.isActive
-            ? AppColors.primaryColor
-            : const Color.fromARGB(255, 151, 43, 43),
-      ),
+          borderRadius: BorderRadius.circular(12),
+          color:
+              widget.isActive ? AppColors.primaryColor : AppColors.balckColor),
     );
   }
 }

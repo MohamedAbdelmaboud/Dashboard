@@ -19,6 +19,7 @@ class PageViewCards extends StatefulWidget {
 
 class _PageViewCardsState extends State<PageViewCards> {
   late PageController _pageController;
+  int currentIndex = 0;
   List<CardModel> cardsModels = [
     CardModel(
       cardName: 'hama Rashd ♥',
@@ -53,6 +54,11 @@ class _PageViewCardsState extends State<PageViewCards> {
       ExpandablePageView.builder(
         controller: _pageController,
         itemCount: 3,
+        onPageChanged: (value) {
+          setState(() {
+            currentIndex = value;
+          });
+        },
         itemBuilder: (context, index) {
           return MyCard(
             cardModel: cardsModels[index],
@@ -61,6 +67,7 @@ class _PageViewCardsState extends State<PageViewCards> {
       ),
       const Gap(19),
       AllDots(
+      pageIndex: currentIndex,
         pageController: _pageController,
       ),
     ]);
