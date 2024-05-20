@@ -4,9 +4,9 @@ import 'package:expandable_page_view/expandable_page_view.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../data/models/card_model.dart';
-import 'my_card/all_dots.dart';
-import 'my_card/my_card.dart';
+import '../../../data/models/card_model.dart';
+import 'all_dots.dart';
+import 'my_card.dart';
 
 class PageViewCards extends StatefulWidget {
   const PageViewCards({
