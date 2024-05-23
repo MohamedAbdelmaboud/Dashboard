@@ -13,49 +13,47 @@ class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(right: 20.0, left: 28.0),
-      child: Container(
-        color: const Color.fromRGBO(255, 255, 255, 1),
-        child: CustomScrollView(
-          slivers: [
-            const SliverToBoxAdapter(
-              child: Padding(
-                padding: EdgeInsets.only(right: 20.0),
-                child: UserInfoTile(
-                  userInfoModel: UserInfoModel(
-                    imagePath: Assets.imagesAvatar3,
-                    subTitle: 'demo@gmail.com',
-                    title: 'Lekan Okeowos',
-                  ),
+    return Container(
+      width: MediaQuery.of(context).size.width * 0.7,
+      color: const Color(0xFFFFFFFF),
+      child: CustomScrollView(
+        slivers: [
+          const SliverToBoxAdapter(
+            child: Padding(
+              padding: EdgeInsets.only(right: 20.0),
+              child: UserInfoTile(
+                userInfoModel: UserInfoModel(
+                  imagePath: Assets.imagesAvatar3,
+                  subTitle: 'demo@gmail.com',
+                  title: 'Lekan Okeowos',
                 ),
               ),
             ),
-            const SliverToBoxAdapter(child: Gap(20)),
-            const ListDrawerItems(),
-            SliverFillRemaining(
-              hasScrollBody: false,
-              child: Column(
-                children: [
-                  const Spacer(),
-                  DrawerItem(
-                    drawerItemModel: DrawerItemModel(
-                      title: 'Settings System',
-                      imagePath: Assets.imagesSettings,
-                    ),
+          ),
+          const SliverToBoxAdapter(child: Gap(20)),
+          const ListDrawerItems(),
+          SliverFillRemaining(
+            hasScrollBody: false,
+            child: Column(
+              children: [
+                const Spacer(),
+                DrawerItem(
+                  drawerItemModel: DrawerItemModel(
+                    title: 'Settings System',
+                    imagePath: Assets.imagesSettings,
                   ),
-                  DrawerItem(
-                    drawerItemModel: DrawerItemModel(
-                      title: 'Logout',
-                      imagePath: Assets.imagesLogout,
-                    ),
+                ),
+                DrawerItem(
+                  drawerItemModel: DrawerItemModel(
+                    title: 'Logout',
+                    imagePath: Assets.imagesLogout,
                   ),
-                  const Gap(48),
-                ],
-              ),
+                ),
+                const Gap(48),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

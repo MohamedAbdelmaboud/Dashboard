@@ -1,4 +1,3 @@
-import 'package:dashboard/features/home/ui/widgets/income/income_pie_chart_with_indicators.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +14,7 @@ class _IncomePieChartState extends State<IncomePieChart> {
   List<PieChartSectionData> showingSections() {
     return List.generate(4, (i) {
       final isTouched = i == touchedIndex;
-      final radius = isTouched ? 30.0 : 15.0;
+      final radius = isTouched ? 30.0 : 20.0;
       switch (i) {
         case 0:
           return PieChartSectionData(
@@ -60,26 +59,25 @@ class _IncomePieChartState extends State<IncomePieChart> {
         PieChartData(
           pieTouchData: PieTouchData(
             touchCallback: (FlTouchEvent event, pieTouchResponse) {
-              setState(() {
-                if (!event.isInterestedForInteractions ||
-                    pieTouchResponse == null ||
-                    pieTouchResponse.touchedSection == null) {
-                  touchedIndex = -1;
-                  return;
-                }
-                touchedIndex =
-                    pieTouchResponse.touchedSection!.touchedSectionIndex;
-              });
+              touchPie(event, pieTouchResponse);
             },
           ),
-          borderData: FlBorderData(
-            show: false,
-          ),
           sectionsSpace: 0,
-          centerSpaceRadius: 30,
           sections: showingSections(),
         ),
       ),
     );
+  }
+
+  void touchPie(FlTouchEvent event, PieTouchResponse? pieTouchResponse) {
+    setState(() {
+      if (!event.isInterestedForInteractions ||
+          pieTouchResponse == null ||
+          pieTouchResponse.touchedSection == null) {
+        touchedIndex = -1;
+        return;
+      }
+      touchedIndex = pieTouchResponse.touchedSection!.touchedSectionIndex;
+    });
   }
 }
