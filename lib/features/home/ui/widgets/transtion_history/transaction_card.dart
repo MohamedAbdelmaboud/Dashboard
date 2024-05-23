@@ -12,7 +12,7 @@ class TransactionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 12.0),
+      padding: const EdgeInsets.only(bottom: 8.0),
       child: Card(
         color: const Color(0xffFAFAFA),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),

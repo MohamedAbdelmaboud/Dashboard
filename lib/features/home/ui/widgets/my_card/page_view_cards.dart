@@ -38,7 +38,7 @@ class _PageViewCardsState extends State<PageViewCards> {
   ];
   @override
   void initState() {
-    _pageController = PageController(initialPage: 0, viewportFraction: 1.1);
+    _pageController = PageController(initialPage: 0, viewportFraction: 1);
     super.initState();
   }
 

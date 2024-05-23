@@ -40,7 +40,7 @@ class CustomHeaderBuilder {
       title: 'Transaction History',
       trailingWidget: Text(
         'See all',
-        style: AppStyles.styleMedium16(context),
+        style: AppStyles.styleRegular14(context),
       ),
     );
   }

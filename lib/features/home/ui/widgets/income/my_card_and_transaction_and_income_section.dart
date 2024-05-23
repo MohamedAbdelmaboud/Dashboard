@@ -1,6 +1,8 @@
-import 'package:dashboard/features/home/ui/widgets/transtion_history/my_card_and_transaction_section.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+
+import '../transtion_history/my_card_and_transaction_section.dart';
+import 'income_section.dart';
 
 class MyCardAndTransactionAndIncomeSection extends StatelessWidget {
   const MyCardAndTransactionAndIncomeSection({
@@ -13,6 +15,8 @@ class MyCardAndTransactionAndIncomeSection extends StatelessWidget {
       children: [
         Gap(40),
         MyCardAndTransactionSection(),
+        Gap(16),
+        IncomeSection()
       ],
     );
   }

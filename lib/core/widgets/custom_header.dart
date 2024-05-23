@@ -1,3 +1,4 @@
+import 'package:dashboard/core/themes/app_colors.dart';
 import 'package:dashboard/core/themes/app_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,8 @@ class CustomHeader extends StatelessWidget {
       children: [
         Text(
           title,
-          style: AppStyles.styleSemiBold20(context),
+          style: AppStyles.styleSemiBold16(context)
+              .copyWith(color: AppColors.secondaryColor),
         ),
         trailingWidget
       ],
