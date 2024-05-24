@@ -28,6 +28,20 @@ class TransctionCardsListView extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
+    // We have two solutions for this but this is the best for عدد محدود
+    // USE COLUMN
+    return Column(
+      children: transactionModels
+          .asMap()
+          .entries
+          .map((e) => TransactionCard(transactionModel: e.value))
+          .toList(),
+    );
+    return Column(
+      children: transactionModels
+          .map((e) => TransactionCard(transactionModel: e))
+          .toList(),
+    );
     return ListView.builder(
       itemCount: transactionModels.length,
       shrinkWrap: true,

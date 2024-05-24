@@ -2,8 +2,8 @@ import 'package:dashboard/features/home/data/models/indicator_item.dart';
 import 'package:dashboard/features/home/data/models/indicator_model.dart';
 import 'package:flutter/material.dart';
 
-class IndicatorsListView extends StatelessWidget {
-  const IndicatorsListView({
+class IndicatorsItems extends StatelessWidget {
+  const IndicatorsItems({
     super.key,
   });
   static List<IndicatorModel> items = [
@@ -30,6 +30,19 @@ class IndicatorsListView extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
+    // We have two solutions for this but this is the best for عدد محدود
+    // USE COLUMN
+    return Column(
+      children: items
+          .asMap()
+          .entries  //  {0:model, 1: model2, 2: model3, 3: model4}
+          .map((e) => IndicatorItem(model: e.value))
+          .toList(),
+    );
+    return Column(
+      children: items.map((e) => IndicatorItem(model: e)).toList(),
+    );
+    // 2. Use a listview.builder
     return ListView.builder(
       itemCount: items.length,
       shrinkWrap: true,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'income_pie_chart.dart';
-import 'indicators_list_view.dart';
+import 'indicators_items.dart';
 
 class IncomePieChartWithIndicators extends StatefulWidget {
   const IncomePieChartWithIndicators({super.key});
@@ -22,7 +22,7 @@ class PieChart2State extends State {
         // List of indicators
         Expanded(
           flex: 2,
-          child: IndicatorsListView(),
+          child: IndicatorsItems(),
         ),
       ],
     );

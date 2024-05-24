@@ -1,13 +1,12 @@
 import 'package:dashboard/core/utils/app_images.dart';
-import 'package:dashboard/features/home/ui/widgets/custom_drawer/drawer_item.dart';
 import 'package:dashboard/features/home/ui/widgets/transtion_history/user_info_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
-import '../../../data/models/drawer_item_model.dart';
 import '../../../data/models/user_info_model.dart';
 import 'list_drawer_items.dart';
+import 'static_drawer_items.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -16,9 +15,9 @@ class CustomDrawer extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width * 0.7,
       color: const Color(0xFFFFFFFF),
-      child: CustomScrollView(
+      child: const CustomScrollView(
         slivers: [
-          const SliverToBoxAdapter(
+          SliverToBoxAdapter(
             child: Padding(
               padding: EdgeInsets.only(right: 20.0),
               child: UserInfoTile(
@@ -30,28 +29,11 @@ class CustomDrawer extends StatelessWidget {
               ),
             ),
           ),
-          const SliverToBoxAdapter(child: Gap(20)),
-          const ListDrawerItems(),
+          SliverToBoxAdapter(child: Gap(20)),
+          ListDrawerItems(),
           SliverFillRemaining(
             hasScrollBody: false,
-            child: Column(
-              children: [
-                const Spacer(),
-                DrawerItem(
-                  drawerItemModel: DrawerItemModel(
-                    title: 'Settings System',
-                    imagePath: Assets.imagesSettings,
-                  ),
-                ),
-                DrawerItem(
-                  drawerItemModel: DrawerItemModel(
-                    title: 'Logout',
-                    imagePath: Assets.imagesLogout,
-                  ),
-                ),
-                const Gap(48),
-              ],
-            ),
+            child: StaticDrawerItems(),
           ),
         ],
       ),

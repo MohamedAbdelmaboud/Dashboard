@@ -3,6 +3,8 @@ import 'package:dashboard/features/home/ui/widgets/custom_drawer/custom_drawer.d
 import 'package:dashboard/features/home/ui/widgets/home_view_body.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/mobile_app_bar.dart';
+
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
 
@@ -27,25 +29,4 @@ class _HomeViewState extends State<HomeView> {
       body: const HomeViewBody(),
     );
   }
-}
-
-class MobileAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const MobileAppBar({
-    super.key,
-    required this.scaffoldKey,
-  });
-  final GlobalKey<ScaffoldState> scaffoldKey;
-  @override
-  Widget build(BuildContext context) {
-    return AppBar(
-      leading: IconButton(
-          icon: const Icon(Icons.menu),
-          onPressed: () {
-            scaffoldKey.currentState!.openDrawer();
-          }),
-    );
-  }
-
-  @override
-  Size get preferredSize => const Size.fromHeight(56);
 }
