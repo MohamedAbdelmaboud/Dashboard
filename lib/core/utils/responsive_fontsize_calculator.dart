@@ -1,3 +1,4 @@
+import 'package:dashboard/core/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
@@ -8,19 +9,21 @@ double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
   double upperLimit = responsivefontSize * 1.20; // It increases by 20 %
   double finalFontSize = responsivefontSize.clamp(lowerLimit, upperLimit);
 
-  print(
-      'the font size is $fontSize ◘◘ The responsivefontSize is $responsivefontSize ◘◘ upper: $upperLimit ◘◘ lowerLimit :$lowerLimit, the final font : $finalFontSize');
   return finalFontSize;
 }
 
 double getScaleFactor(BuildContext context) {
+  // dispatcher
+  
+  // every time trigger this method (trigger the media query ),it will return a new scale factor and rebuild the ui
+
   double width = MediaQuery.sizeOf(context).width;
-  if (width < 600) {
-    return width / 400; // scale factor for mobile --> 400 reference width
-  } else if (width < 900) {
-    return width / 700; // scale factor for tablet --> 700 reference width
+  if (width < SizeConfig.tablet) {
+    return width / 800; // scale factor for mobile --> 400 reference width
+  } else if (width < SizeConfig.desktop) {
+    return width / 1100; // scale factor for tablet --> 700 reference width
   } else {
-    return width / 1100; // scale factor for desktop --> 1100  reference width
+    return width / 1500; // scale factor for desktop --> 1100  reference width
   }
 }
 // scale factor

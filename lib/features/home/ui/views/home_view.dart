@@ -15,12 +15,13 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
   var scaffoldKey = GlobalKey<ScaffoldState>();
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
+    double width = MediaQuery.sizeOf(context)
+        .width; // get the width of the screen , this method is called when the screen is resized and rebuild ui
     return Scaffold(
-      drawer:
-          MediaQuery.sizeOf(context).width < 800 ? const CustomDrawer() : null,
+      drawer: width < 800 ? const CustomDrawer() : null,
       key: scaffoldKey,
-      appBar: MediaQuery.sizeOf(context).width < 800
+      appBar: width < 800
           ? MobileAppBar(
               scaffoldKey: scaffoldKey,
             )

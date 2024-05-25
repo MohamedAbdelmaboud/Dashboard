@@ -1,6 +1,5 @@
 import 'package:dashboard/core/themes/app_styles.dart';
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 
 class CardDetails extends StatelessWidget {
   const CardDetails({
@@ -23,10 +22,10 @@ class CardDetails extends StatelessWidget {
           ),
           Text(
             '12/20 - 124',
-            style:
-                AppStyles.styleRegular14(context).copyWith(color: Colors.white),
+            style: AppStyles.styleRegular14(context).copyWith(
+              color: Colors.white,
+            ),
           ),
-          const Gap(10)
         ],
       ),
     );

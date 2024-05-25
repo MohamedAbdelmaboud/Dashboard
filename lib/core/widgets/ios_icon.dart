@@ -17,6 +17,7 @@ class IosIcon extends StatelessWidget {
       angle: angle,
       child: Icon(
         Icons.arrow_back_ios_rounded,
+        size: 15,
         color: isActive ? Colors.white : AppColors.secondaryColor,
       ),
     );

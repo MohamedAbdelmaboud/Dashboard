@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/themes/app_colors.dart';
+
 class MobileAppBar extends StatelessWidget implements PreferredSizeWidget {
   const MobileAppBar({
     super.key,
@@ -9,6 +11,7 @@ class MobileAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: AppColors.primaryColor,
       leading: IconButton(
           icon: const Icon(Icons.menu),
           onPressed: () {

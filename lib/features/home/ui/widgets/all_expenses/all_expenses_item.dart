@@ -17,7 +17,7 @@ class AllExpensesItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
+      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 10),
       margin: const EdgeInsets.only(right: 12),
       decoration: BoxDecoration(
         color: isActive ? AppColors.primaryColor : null,
@@ -33,7 +33,7 @@ class AllExpensesItem extends StatelessWidget {
             imagePath: model.imagepath,
             isActive: isActive,
           ),
-          const Gap(34),
+          const Gap(20),
           Text(
             model.title,
             style: AppStyles.styleSemiBold16(context)

@@ -17,7 +17,7 @@ getScaleFactor(BuildContext context) {
   double width = MediaQuery.sizeOf(context).width;
   if (width < 600) {
     return width /
-        400; // scale factor for mobile --> 400 reference width  --> decrese or increse
+        400; // scale factor for mobile --> 400 reference width  --> decrese or increse on it
   } else if (width < 900) {
     return width / 700; // scale factor for tablet --> 700 reference width
   } else {
