@@ -14,12 +14,12 @@ double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
 
 double getScaleFactor(BuildContext context) {
   // dispatcher
-  
+
   // every time trigger this method (trigger the media query ),it will return a new scale factor and rebuild the ui
 
   double width = MediaQuery.sizeOf(context).width;
   if (width < SizeConfig.tablet) {
-    return width / 800; // scale factor for mobile --> 400 reference width
+    return width / 650; // scale factor for mobile --> 400 reference width
   } else if (width < SizeConfig.desktop) {
     return width / 1100; // scale factor for tablet --> 700 reference width
   } else {
